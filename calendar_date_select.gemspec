@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{calendar_date_select}
-  s.version = "1.16.1"
+  s.version = "1.16.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Shih-gian Lee", "Enrique Garcia Cota (kikito)", "Tim Charper", "Lars E. Hoeg"]
-  s.date = %q{2010-03-29}
+  s.date = %q{2010-06-11}
   s.description = %q{Calendar date picker for rails}
   s.email = %q{}
   s.extra_rdoc_files = [
@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
      "lib/calendar_date_select/includes_helper.rb",
      "public/blank_iframe.html",
      "public/images/calendar_date_select/calendar.gif",
+     "public/images/calendar_date_select/calendar_disabled.gif",
      "public/javascripts/calendar_date_select/calendar_date_select.js",
      "public/javascripts/calendar_date_select/format_american.js",
      "public/javascripts/calendar_date_select/format_danish.js",
@@ -55,11 +56,13 @@ Gem::Specification.new do |s|
      "public/javascripts/calendar_date_select/locale/fi.js",
      "public/javascripts/calendar_date_select/locale/fr.js",
      "public/javascripts/calendar_date_select/locale/it.js",
+     "public/javascripts/calendar_date_select/locale/ja.js",
      "public/javascripts/calendar_date_select/locale/nl.js",
      "public/javascripts/calendar_date_select/locale/pl.js",
      "public/javascripts/calendar_date_select/locale/pt.js",
      "public/javascripts/calendar_date_select/locale/ru.js",
      "public/javascripts/calendar_date_select/locale/sl.js",
+     "public/javascripts/calendar_date_select/locale/sv.js",
      "public/stylesheets/calendar_date_select/blue.css",
      "public/stylesheets/calendar_date_select/default.css",
      "public/stylesheets/calendar_date_select/green.css",
@@ -74,12 +77,12 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/timcharper/calendar_date_select}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.3.5}
   s.summary = %q{Calendar date picker for rails}
   s.test_files = [
-    "spec/calendar_date_select/calendar_date_select_spec.rb",
+    "spec/calendar_date_select/includes_helper_spec.rb",
+     "spec/calendar_date_select/calendar_date_select_spec.rb",
      "spec/calendar_date_select/form_helpers_spec.rb",
-     "spec/calendar_date_select/includes_helper_spec.rb",
      "spec/spec_helper.rb"
   ]
 
@@ -93,3 +96,4 @@ Gem::Specification.new do |s|
   else
   end
 end
+
