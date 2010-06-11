@@ -5,13 +5,14 @@ begin
   require 'rubygems'
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "calendar_date_select"
+    gemspec.name = "ginkel-calendar_date_select"
     gemspec.version = File.read("VERSION").strip
     gemspec.summary = "Calendar date picker for rails"
-    gemspec.description = "Calendar date picker for rails"
-    gemspec.email = ""
-    gemspec.homepage = "http://github.com/timcharper/calendar_date_select"
-    gemspec.authors = ["Shih-gian Lee", "Enrique Garcia Cota (kikito)", "Tim Charper", "Lars E. Hoeg"]
+    gemspec.description = "Calendar date picker for rails; fork that allows disabling any date entry"
+    gemspec.email = "thilo@ginkel.com"
+    gemspec.homepage = "http://github.com/ginkel/calendar_date_select"
+    gemspec.authors = ["Thilo-Alexander Ginkel", "Shih-gian Lee", "Enrique Garcia Cota (kikito)", "Tim Charper", "Lars E. Hoeg"]
+    #gemspec.rubyforge_project = "ginkel-calendar_date_select"
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install jeweler"
