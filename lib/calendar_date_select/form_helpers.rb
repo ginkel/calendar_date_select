@@ -158,7 +158,7 @@ module CalendarDateSelect::FormHelpers
       options, javascript_options = CalendarDateSelect.default_options.merge(options), {}
       image = options.delete(:image)
       callbacks = [:before_show, :before_close, :after_show, :after_close, :after_navigate]
-      for key in [:default_time, :time, :valid_date_check, :embedded, :buttons, :clear_button, :format, :year_range, :month_year, :popup, :hidden, :minute_interval] + callbacks
+      for key in [:default_time, :time, :valid_date_check, :embedded, :buttons, :clear_button, :format, :year_range, :month_year, :popup, :hidden, :minute_interval, :readonly] + callbacks
         javascript_options[key] = options.delete(key) if options.has_key?(key)
       end
 
@@ -209,11 +209,14 @@ module CalendarDateSelect::FormHelpers
         out << content_tag(:span, nil, :style => "display: none; position: absolute;", :id => uniq_id)
         out << javascript_tag("new CalendarDateSelect( $('#{uniq_id}').previous(), #{options_for_javascript(javascript_options)} ); ")
       else
-        out << " "
-        out << image_tag(image,
-            :onclick => "new CalendarDateSelect( $(this).previous(), #{options_for_javascript(javascript_options)} );",
-            :style => 'border:0px; cursor:pointer;',
-			:class=>'calendar_date_select_popup_icon')
+        unless javascript_options[:readonly]
+          out << " "
+          out << image_tag(image,
+              :onclick => "new CalendarDateSelect( $(this).previous(), #{options_for_javascript(javascript_options)} );",
+              :style => 'border:0px; cursor:pointer;',
+  			      :class => 'calendar_date_select_popup_icon',
+              :id => options[:id]  + '_img')
+        end
       end
       out
     end
