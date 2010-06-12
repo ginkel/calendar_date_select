@@ -1,5 +1,5 @@
 module CalendarDateSelect
-  VERSION = '1.16.1.1'
+  VERSION = '1.16.1.2'
 
   FORMATS = {
     :natural => {

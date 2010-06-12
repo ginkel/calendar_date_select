@@ -12,7 +12,7 @@ begin
     gemspec.email = "thilo@ginkel.com"
     gemspec.homepage = "http://github.com/ginkel/calendar_date_select"
     gemspec.authors = ["Thilo-Alexander Ginkel", "Shih-gian Lee", "Enrique Garcia Cota (kikito)", "Tim Charper", "Lars E. Hoeg"]
-    #gemspec.rubyforge_project = "ginkel-calendar_date_select"
+    gemspec.rubyforge_project = "ginkel-calendar_date_select"
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install jeweler"

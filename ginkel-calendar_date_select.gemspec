@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ginkel-calendar_date_select}
-  s.version = "1.16.1.1"
+  s.version = "1.16.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Thilo-Alexander Ginkel", "Shih-gian Lee", "Enrique Garcia Cota (kikito)", "Tim Charper", "Lars E. Hoeg"]
-  s.date = %q{2010-06-11}
+  s.date = %q{2010-06-12}
   s.description = %q{Calendar date picker for rails; fork that allows disabling any date entry}
   s.email = %q{thilo@ginkel.com}
   s.extra_rdoc_files = [
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
      "README.txt",
      "Rakefile",
      "VERSION",
-     "calendar_date_select.gemspec",
+     "ginkel-calendar_date_select.gemspec",
      "init.rb",
      "js_test/functional/.tmp_cds_test.html",
      "js_test/functional/cds_test.html",
@@ -32,10 +32,10 @@ Gem::Specification.new do |s|
      "js_test/test.css",
      "js_test/unit/cds_helper_methods.html",
      "js_test/unittest.js",
-     "lib/calendar_date_select.rb",
      "lib/calendar_date_select/calendar_date_select.rb",
      "lib/calendar_date_select/form_helpers.rb",
      "lib/calendar_date_select/includes_helper.rb",
+     "lib/ginkel-calendar_date_select.rb",
      "public/blank_iframe.html",
      "public/images/calendar_date_select/calendar.gif",
      "public/javascripts/calendar_date_select/calendar_date_select.js",
@@ -76,6 +76,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/ginkel/calendar_date_select}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
+  s.rubyforge_project = %q{ginkel-calendar_date_select}
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Calendar date picker for rails}
   s.test_files = [
